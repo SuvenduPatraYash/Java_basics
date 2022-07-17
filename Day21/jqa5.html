@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>
+	Count Number of Rows and Columns in
+	a Table Using jQuery.
+	</title>
+
+	<script src = "jquery.js">
+	</script>
+</head>
+
+<body>
+	<center>
+
+	<strong>
+		Count Number of Rows and Columns in
+		a Table Using jQuery
+	</strong>
+
+	<br><br>
+
+	<table id="Table_id" border="1" width="140">
+		<thead>
+
+		<tr style = "background:orange;">
+			<th>Company</th>
+           <th>Contact</th>
+           <th>Country</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr>
+			<td>yash technology</td>
+			<td>546546556</td>
+			<td>Russia</td>
+		</tr>
+		<tr>
+			<td>Google</td>
+			<td>8675788</td>
+			<td>China</td>
+		</tr>
+        <tr>
+			<td>Amazon</td>
+			<td>86757808</td>
+			<td>China</td>
+		</tr>
+		</tbody>
+	</table>
+	<br>
+
+	<button type="button" id="button1">
+		Count Rows
+	</button>
+    <button type="button" id="button2">
+		Count Columns
+	</button>
+
+	<script>
+		$(document).ready(function(){
+		    $("#button1").click(function(){
+			
+			var rowCount = $("#Table_id tr").length;
+			alert(rowCount);
+        });
+            $("#button2").click(function(){
+			
+			var colCount = $("#Table_id tr th").length;
+            alert(colCount);
+            
+	
+        });
+        });
+	</script>
+    </center>
+</body>
+</html>					

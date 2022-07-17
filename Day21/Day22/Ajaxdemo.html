@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        function load()
+        {
+            var xhttp=new XMLHttpRequest();
+            xhttp.onreadystatechange=function()
+            {
+                if(this.readyState==4 && this.status==200)
+                {
+                    document.getElementById("yash").innerHTML=this.responseText;
+                }
+            };
+            xhttp.open("GET","suvendu.txt");
+            xhttp.send();
+        }
+    </script>
+
+    <body>
+        <div id="yash">
+            <h1>
+                Demo Example of XHR Object
+            </h1>
+            <button type="button" onclick="load()">
+                Ajax demo Content
+            </button>
+        </div>
+    </body>
+</html>

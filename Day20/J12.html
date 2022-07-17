@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>J12</title>
+</head>
+<body>
+<script>
+function front_back3(str)
+ {
+  if (str.length>=3)
+   {
+   str_len = 3;
+ 
+  back = str.substring(str.length-3);
+   return back + str + back;
+ }
+   else
+     return false;
+ }
+
+document.write(front_back3("abc"));
+document.write("<br>");
+document.write(front_back3("ab"));
+document.write("<br>");
+document.write(front_back3("abcd"));
+</script>
+</body>
+
+<html>

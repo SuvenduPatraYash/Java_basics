@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>JS5</title>
+</head>
+<body style="text-align: center;">
+    <h1 style="color: green;">
+        ROTATED WORD IN ANIMATION
+    </h1>
+<p id = 'rotate'></p>
+<script>
+var myVar = setInterval(myFunction, 1000);
+var word = 'yashtechnologies';
+var newArray = word.split('');
+
+function myFunction() {
+var letter = newArray.pop();
+var newWord = newArray.unshift(letter);
+var theWord = newArray.join('');
+console.log(theWord);
+document.getElementById('rotate').innerHTML = theWord;
+}
+</script>
+  
+ 
+</body>
+<html>

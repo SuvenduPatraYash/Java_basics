@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>
+		how to make words bold??
+	</title>
+
+	
+	<script src="jquery.js">
+
+	</script>
+
+	<script>
+		$(document).ready(function() 
+		{
+			$("p").each(function() 
+			{
+				var txt = $(this);
+				txt.html(txt.text().replace(/(^w+)/,'<strong>$1</strong>'));
+			});
+		});
+	</script>
+</head>
+
+<body style="text-align: center;">
+	<h1 style="color: rgb(0, 36, 128);">
+		What ever...
+	</h1>
+
+	<h3>
+		written here...
+	</h3>
+	
+	<p>turns into...</p>
+
+	<p>BOLD...BE BOLD !!</p>
+</body>
+
+</html>

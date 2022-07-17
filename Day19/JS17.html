@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS17</title>
+</head>
+<body>
+<script>
+function countVowel(str) 
+{ 
+
+   const count = str.match(/[aeiou]/gi).length;
+   return count;
+}
+const string = prompt('Enter a string: ');
+
+const result = countVowel(string);
+
+document.write(result);
+</script> 
+</body>
+</html>

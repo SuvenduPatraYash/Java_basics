@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()   
+{
+  
+
+  $("p").dblclick(function(){
+    $(this).hide();
+  });
+  $("h1").click(function()
+  {
+    alert("You have clicked");
+  });
+  $("h2").hover(function()
+  {
+    //alert("You have clicked");
+  });
+  $("input").focus(function()
+  {
+    $(this).css("background-color","yellow");
+  });
+});
+</script>
+</head>
+<body>
+<p>Yash</p> 
+<h1>welcome to yash Technologies</h1>
+<h2>Yash World</h2>
+FirstName<input type="text" name="x"><br>
+LastName<input type="text" name="y">
+</body>
+</html>

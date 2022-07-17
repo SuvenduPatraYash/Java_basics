@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS18</title>
+</head>
+<body>
+<script>
+function equal_pt(str)
+{ 
+  var str_p = str.replace(/[^p]/g, "");
+
+  var str_t = str.replace(/[^t]/g, "");
+
+  var p_num = str_p.length;
+  var s_num = str_t.length;
+
+  return p_num == s_num;
+         
+}
+document.writeln(equal_pt("pratap"));
+document.writeln("<br>");
+document.writeln(equal_pt("prattap"));
+</script> 
+</body>
+</html>

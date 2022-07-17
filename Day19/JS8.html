@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>
+		Guess Number
+	</title>
+</head>
+      
+<body>
+	Input Number: <input type="number" id = "number"/>
+	<input type="button" id="button" onClick="matchMaking()" value="Check Number Matching">
+	<p id="GFG"></p>
+	<script>
+		function matchMaking() 
+		{
+			let num = Math.ceil(Math.random() * 10);
+            console.log(num);
+            let gnum = document.getElementById("number").value;
+            if (gnum == num)
+            document.getElementById("GFG").innerHTML='Matched';
+            else
+            document.getElementById("GFG").innerHTML='Not matched';
+		}
+	</script>
+</body>
+
+</html>

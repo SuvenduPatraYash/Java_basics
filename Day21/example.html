@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery.js"></script>
+<script>
+$(document).ready(function()   //preventing the jquery to run before the page loaded
+{
+  $("#b1").click(function()
+  {
+    $("p:first").hide();//hide all p elements
+    //$(this).hide();//refers the current element
+    $(".abc").hide();//refers TO HIDE ALL ELEMENTS WITH CLASS="abc"
+    $("#abc").hide();//refers to hide all elements with id="abc"
+  });
+  $("#b2").click(function()
+  {
+    $("p:first").show();//hide all p elements
+    //$(this).show();//refers the current element
+    $(".abc").show();//refers TO HIDE ALL ELEMENTS WITH CLASS="abc"
+    $("#abc").show();//refers to hide all elements with id="abc"
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>welcome to yash Technologies</h2>              
+
+<p>Yash</p>                                         
+                                                    
+<p>Technologies</p>
+<p id="abc">Yash technologies</p>
+<h4 class="abc">This is h4 tag</h4>
+<button id="b1">hide paragraphs</button>
+<button id="b2">Show Paragraphs</button>
+
+</body>
+</html>
